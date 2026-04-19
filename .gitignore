@@ -1,0 +1,33 @@
+# Build outputs
+bin/
+obj/
+
+# VS Code
+.vscode/
+
+# User specific files
+*.user
+*.suo
+
+# dotnet
+*.swp
+*.*~
+project.lock.json
+.DS_Store
+*.pyc
+
+# Environment and secrets
+appsettings.Development.json
+*.env
+.env
+
+# NuGet
+.nuget/
+*.nupkg
+
+# Rider
+.idea/
+
+# Visual Studio
+.vs/
+*.rsuser
