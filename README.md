@@ -53,7 +53,7 @@ aws configure
 dotnet run
 ```
 
-4. Open Swagger UI at `http://localhost:5050/openapi`
+4. Open Swagger UI at `http://localhost:port/swagger`
 
 ## Design Decisions
 - **DynamoDB** was chosen for its ability to scale horizontally 
