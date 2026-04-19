@@ -37,13 +37,14 @@ app.UseExceptionHandler(errorApp =>
         var exception = context.Features
             .Get<IExceptionHandlerFeature>()?.Error;
 
+        Console.WriteLine($"Error: {exception?.Message}");
+        
         context.Response.StatusCode = 500;
         context.Response.ContentType = "application/json";
 
         await context.Response.WriteAsJsonAsync(new
         {
-            message = "An error occurred",
-            detail = exception?.Message
+            message = "An internal error occurred",
         });
     });
 });
